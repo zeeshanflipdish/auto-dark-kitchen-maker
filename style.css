@@ -1,0 +1,288 @@
+/*---------------------------------------------------------------------------------
+
+ Theme Name:   Auto Dark Kitchen Maker
+ Theme URI:    https://kitchenmakerfactory.com/
+ Description:  Flipdish divi child theme for Dark Kitchen sites.
+ Author:       Flipdish
+ Author URI:   https://www.flipdish.com/
+ Template:     Divi
+ Version:      1.3.9
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+
+                                                    
+                           ####                     
+                          ######                    
+                          ######                    
+                      ##############                
+                   *############# =####             
+   #############################      ###           
+  ##############################        ##          
+              ####################-      ##+        
+              ######################=     ##        
+      ################################    ###       
+      ################################    *###      
+            ###########################   -###      
+          #####################################+    
+         ########################################   
+          +*************#####*#####************.    
+                        .###   ####                 
+                        ####    ####                
+                       #####    :###                
+                   ########      ####               
+               +#######*         ####               
+               #####            ####                
+                ####           ####                 
+                 ####         ######*               
+                             ########               
+                                                
+
+------------------------------ ADDITIONAL CSS HERE ------------------------------*/
+
+
+/*Buttons*/
+.et_pb_button {
+	color: #ffffff !important;
+    background: var(--thirdBackground) !important;
+	border-color: var(--thirdBackground) !important;
+    display: block;
+    box-shadow: 0px 5px 3px 0px rgba(10, 10, 10, 0.5);
+}
+
+
+/*Filterable Grid
+ * Removes padding below restaurant title
+ * */
+
+article .dp-dfg-header {
+    padding-bottom: 0px !important;
+}
+
+/*set title to 2 lines*/
+.dp-dfg-skin-default .dp-dfg-header h2.entry-title {
+    height: 40px !important;
+}
+
+/* Removing it not causing much effect - double check this one */
+article .dp-dfg-custom-content {
+    position: relative !important;
+    bottom: 0px !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 0px !important;
+}
+
+/* both same so we can remove one with 0px but will check */
+article .dp-dfg-layout-grid .dp-dfg-item {
+    padding-bottom: 0px !important;
+}
+article .dp-dfg-layout-grid .dp-dfg-item {
+    padding: 0 0.6em !important;
+}
+
+/* pickup - collection buttons */
+article .dp-dfg-more-button {
+    background: var(--thirdBackground) !important;
+    box-shadow: 0px 2px 3px 0px rgba(10,10,10,0.05);  
+    padding-right: 0.1em !important;
+    padding-left: 0.1em !important;
+    font-size: 18px !important;
+    position: relative !important;
+    width: 100%;
+    margin-bottom: 0.6rem !important;
+}
+article .dp-dfg-more-button:hover {
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.8);
+}
+
+/* check this - no effect */
+article .pickup_status {
+    bottom: 0px;
+}
+
+/* check this - no effect */
+article .delivery_status {
+    bottom: 0px;
+}
+
+article .opening_soon {
+    bottom: 0px;
+    filter: grayscale(1);
+}
+
+
+
+/*Individual Restaurant Page*/
+/*Organise open closing times left right
+ * Where being used? check this
+ * */
+.aboutOpeningHours {
+    width: 50%;
+    float: left;
+    text-align: right !important;
+}
+.aboutClosingTime {
+    width: 50%;
+    float: left;
+}
+
+/* Opening Status - check this */
+.status_button--hidden {
+    display: none;
+}
+
+/* Remove old order button */
+.restaurants .et_pb_button_wrapper {
+    display: none;
+}
+
+/*Ordering buttons*/
+
+#restaurantPageTopBackground .dp-dfg-more-button {
+    width: 276px;
+    text-transform: uppercase;
+    padding: 6px 8px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#restaurantPageTopBackground .dp-dfg-more-button:after {
+    display: none !important;
+}
+
+#restaurantPageTopBackground .opening_soon.dp-dfg-more-button {
+    filter: grayscale(1);
+}
+
+
+
+/*---------------------------------------------------------------------------------
+
+ Description:  API (Menu) CSS style
+ Author:       Flipdish
+ Version:      0.0.1
+
+------------------------------ ADDITIONAL CSS HERE ------------------------------*/
+
+/* Divi Sidebar Border - check */
+#main-content .container:before {
+    width: 0;
+}
+
+.et_pb_widget_area_right {
+    border-left: 0 !important;
+}
+
+.et_pb_widget_area_left {
+    border-right: 0 !important;
+}
+
+/* Menu Json Style */
+
+.fd-card {
+    border: 1px solid #e5e7eb;
+    float: left;
+    width: 100%;
+    min-height: 185px;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    position: relative;
+}
+
+.fd-menu-item-name {
+    float: left;
+    width: calc(100% - 140px);
+    font-weight: 600;
+}
+
+.fd-menu-item-price {
+    width: 100%;
+    font-weight: bold;
+    position: absolute;
+    left: 12px;
+    bottom: 12px;
+    height: 20px;
+}
+
+.fd-menu-item-desc {
+    float: left;
+    color: #494F50;
+    width: calc(100% - 140px);
+    display: inline-block;
+    min-height: 50px;
+    margin-bottom: 24px;
+}
+
+.fd-menu-item-image {
+    float: right;
+	width: 120px;
+}
+
+h4 {
+    font-family: Work Sans, sans-serif !important;
+    color: #000000 !important;
+}
+
+.fd-menu-sectionname {
+    margin-top: 50px;
+}
+
+/*reduce space on the opening hours*/
+.pickup-delivery-card {
+	padding-left: 0px !important;
+}
+.OpeningHours-Pickup, .OpeningHours-Delivery  {
+	padding-left: 0px !important;
+}
+
+
+.menu-row {
+--bs-gutter-x: 2rem !important;
+    /* control column gap */
+--bs-gutter-y: 2rem !important;
+    /* control row gap */
+}
+
+.DayOfWeek>p:first-child {
+    font-weight: bold;
+}
+
+.pickup-delivery-card {
+	  padding: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+
+.fd-card {
+    padding: 6px;
+}
+
+.fd-menu-item-name {
+    width: calc(100% - 115px);
+}
+
+.fd-menu-item-price {
+    left: 6px;
+    bottom: 6px;
+}
+
+.fd-menu-item-desc {
+    width: calc(100% - 115px);
+}
+
+.fd-menu-item-image {
+	width: 110px;
+}
+}
+
+
+
+/* bug pickup times*/
+body:not(.et-tb) #main-content .container, body:not(.et-tb-has-header) #main-content .container {
+    padding-top: 0;
+}
+
+/*---------------------------------------------------------------------------------
+ END  API (Menu) CSS style
+---------------------------------------------------------------------------------*/
