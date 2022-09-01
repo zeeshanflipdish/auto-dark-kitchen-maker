@@ -6,7 +6,7 @@
  Author:       Flipdish
  Author URI:   https://www.flipdish.com/
  Template:     Divi
- Version:      1.5
+ Version:      1.6
  License:      GNU General Public License v2 or later
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Github Theme URI: zeeshanflipdish/auto-dark-kitchen-maker
@@ -287,5 +287,4 @@ body:not(.et-tb) #main-content .container, body:not(.et-tb-has-header) #main-con
 /*---------------------------------------------------------------------------------
  END  API (Menu) CSS style
 ---------------------------------------------------------------------------------*/
-
-.test{font-size: 12px;}
+.test{font-size: 16px;}
